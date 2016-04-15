@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Class-Path: Catalog-ProductManagementData.jar Catalog-ProductManagemen
+ tLogic.jar ContentManagement-WorkspaceFlowData.jar ContentManagement-
+ WorkspaceFlowLogic.jar Enablement-BaseComponentsData.jar Enablement-B
+ aseComponentsLogic.jar Enablement-BaseComponentsLogicWAS6.jar Enablem
+ ent-BusinessContextEngineAdvancedData.jar Enablement-BusinessContextE
+ ngineAdvancedInterface.jar Enablement-BusinessContextEngineAdvancedLo
+ gic.jar Enablement-BusinessContextEngineData.jar Enablement-BusinessC
+ ontextEngineInterface.jar Enablement-BusinessContextEngineLogic.jar E
+ nablement-IntegrationData.jar Enablement-IntegrationLogic.jar Enablem
+ ent-IntegrationLogicWAS6.jar Enablement-RelationshipManagementData.ja
+ r Enablement-RelationshipManagementLogic.jar Enablement-SecurityInter
+ face.jar Enablement-StaticFileLoaderLogic.jar Enablement-StaticFilePu
+ blishLogic.jar Enablement-StrutsBaseLogic.jar Enablement-TicklerData.
+ jar Enablement-TicklerLogic.jar GiftRegistry-BaseComponentData.jar Gi
+ ftRegistry-BaseComponentLogic.jar GiftRegistry-InfrastructureLogic.ja
+ r GiftRegistry-OrderIntegrationData.jar GiftRegistry-OrderIntegration
+ Logic.jar Marketing-CampaignsAndScenarioMarketingData.jar Marketing-C
+ ampaignsAndScenarioMarketingLogic.jar Marketing-CustomerProfilingAndS
+ egmentationLogic.jar Marketing-ExperimentationManagementData.jar Mark
+ eting-ExperimentationManagementLogic.jar Member-MemberManagementData.
+ jar Member-MemberManagementLogic.jar Merchandising-PromotionsAndDisco
+ untsData.jar Merchandising-PromotionsAndDiscountsLogic.jar Order-Orde
+ rCaptureData.jar Order-OrderCaptureLogic.jar Order-OrderManagementDat
+ a.jar Order-OrderManagementLogic.jar Payments-EDP-Common.jar Payments
+ -EDP-Data.jar Payments-Plugin-Controller.jar Payments-Plugin-LOC.jar 
+ Payments-Plugin-SimpleOffline.jar Payments-Plugin-WCPayments.jar Paym
+ ents-Plugin.jar Telesales-BaseInterface.jar Telesales-EnablementInteg
+ rationLogic.jar Trading-AuctionsAndRFQsData.jar Trading-AuctionsAndRF
+ QsLogic.jar Analytics-BusinessIntelligenceLogic.jar Catalog-Client.ja
+ r Catalog-DataObjects.jar Catalog-Server.jar CatalogServicesJMSInterf
+ ace.jar Contract-Client.jar Contract-DataObjects.jar Contract-Server.
+ jar ContractServicesJMSInterface.jar Enablement-JCACrossWorldsConnect
+ or.rar Enablement-JCAEMailConnector.rar Enablement-JCAEWGConnector.ra
+ r Enablement-JCAFileConnector.rar Enablement-JCAHTTP-WSConnector.rar 
+ Enablement-JCAHTTPConnector.rar Enablement-JCAJMS-WSConnector.rar Ena
+ blement-JCAJMSConnector.rar Enablement-JCASampleConnector.rar Enablem
+ ent-SDO.jar Foundation-Core.jar Foundation-DataObjects.jar Foundation
+ -Extension.jar Foundation-Server.jar Marketing-Client.jar Marketing-D
+ ataObjects.jar Marketing-Server.jar Member-Client.jar Member-DataObje
+ cts.jar Member-Server.jar MemberServicesJMSInterface.jar Order-Client
+ .jar Order-DataObjects.jar Order-Server.jar OrderServicesJMSInterface
+ .jar Price-Client.jar Price-DataObjects.jar Price-Server.jar Promotio
+ n-Client.jar Promotion-DataObjects.jar Promotion-Server.jar SEO-BaseC
+ omponentLogic.jar Store-Client.jar Store-DataObjects.jar Store-Server
+ .jar lib/LMRecommender.jar lib/feedbackilm.jar lib/feedbacklm.jar lib
+ /jtopen.jar lib/likeminds.jar lib/wcslm.jar lib/wpcpruntime.jar lib/w
+ pcpruntimecommon.jar lib/xsdbeans.jar
+

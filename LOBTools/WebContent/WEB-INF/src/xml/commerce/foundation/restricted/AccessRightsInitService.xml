@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+<Definitions>
+	<!---
+		This initialization service sets marketing view access control in context value
+		'marketingViewRole'.
+	-->
+	<InitService definitionName="cmc/foundation/MarketingViewAccessRightInitService" url="/cmc/GetAccessRight">
+		<ServiceParam name="storeId"/>
+		<ServiceParam parameterName="usage" value="IBM_ViewMarketingTool"/>
+		<ServiceParam parameterName="accessRightContext" value="marketingViewRole"/>
+	</InitService>
+
+	<!---
+		This initialization service sets promotion view access control in context value
+		'promotionViewRole'.
+	-->
+	<InitService definitionName="cmc/foundation/PromotionViewAccessRightInitService" url="/cmc/GetAccessRight">
+		<ServiceParam name="storeId"/>
+		<ServiceParam parameterName="usage" value="IBM_ViewPromotionTool"/>
+		<ServiceParam parameterName="accessRightContext" value="promotionViewRole"/>
+	</InitService>
+
+	<!---
+		This initialization service sets catalog view access control in context value
+		'catalogViewRole'.
+	-->
+	<InitService definitionName="cmc/foundation/CatalogViewAccessRightInitService" url="/cmc/GetAccessRight">
+		<ServiceParam name="storeId"/>
+		<ServiceParam parameterName="usage" value="IBM_ViewCatalogTool"/>
+		<ServiceParam parameterName="accessRightContext" value="catalogViewRole"/>
+	</InitService>
+
+	<!---
+		This initialization service sets attachment view access control in context value
+		'attachmentViewRole'.
+	-->
+	<InitService definitionName="cmc/foundation/AttachmentViewAccessRightInitService" url="/cmc/GetAccessRight">
+		<ServiceParam name="storeId"/>
+		<ServiceParam parameterName="usage" value="IBM_ViewAttachmentTool"/>
+		<ServiceParam parameterName="accessRightContext" value="attachmentViewRole"/>
+	</InitService>
+
+	<!---
+		This initialization service sets pricing view access control in context value
+		'pricingViewRole'.
+	-->
+	<InitService definitionName="cmc/foundation/PricingViewAccessRightInitService" url="/cmc/GetAccessRight">
+		<ServiceParam name="storeId"/>
+		<ServiceParam parameterName="usage" value="IBM_PricingTool"/>
+		<ServiceParam parameterName="accessRightContext" value="pricingViewRole"/>
+	</InitService>
+
+	<!---
+		This initialization service sets page layout view access control in context value
+		'layoutViewRole'.
+	-->
+	<InitService definitionName="cmc/foundation/LayoutViewAccessRightInitService" url="/cmc/GetAccessRight">
+		<ServiceParam name="storeId"/>
+		<ServiceParam parameterName="usage" value="IBM_ViewPageLayoutTool"/>
+		<ServiceParam parameterName="accessRightContext" value="layoutViewRole"/>
+	</InitService>
+
+	<!---
+		This initialization service sets page composer access control in context value
+		'pageComposerViewRole'.
+	-->
+	<InitService definitionName="cmc/foundation/PageComposerViewAccessRightInitService" url="/cmc/GetAccessRight">
+		<ServiceParam name="storeId"/>
+		<ServiceParam parameterName="usage" value="IBM_ViewPageComposerTool"/>
+		<ServiceParam parameterName="accessRightContext" value="pageComposerViewRole"/>
+	</InitService>
+</Definitions>

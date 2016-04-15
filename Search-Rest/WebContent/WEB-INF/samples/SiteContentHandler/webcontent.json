@@ -1,0 +1,122 @@
+{
+	"suggestionView":[
+		{
+			"categorySeparator":" > ",
+			"entry":[
+				{
+					"shortDescription":"The latest styles for the entire family.",
+					"name":"Apparel",
+					"value":"3074457345616676668",
+					"image":"images\/catalog\/apparel\/women\/category\/catr_wcl_pants.png",
+					"fullPath":"Apparel"
+				},
+				{
+					"shortDescription":"Men",
+					"name":"Men",
+					"value":"3074457345616676669",
+					"image":"images\/catalog\/apparel\/men\/category\/catr_app_men.png",
+					"fullPath":"Apparel > Men"
+				},
+				{
+					"shortDescription":"Women",
+					"name":"Women",
+					"value":"3074457345616676670",
+					"image":"images\/catalog\/apparel\/women\/category\/catr_app_women.png",
+					"fullPath":"Apparel > Women"
+				},
+				{
+					"shortDescription":"boys",
+					"name":"Boys",
+					"value":"3074457345616676671",
+					"image":"images\/catalog\/apparel\/boys\/category\/catr_app_boys.png",
+					"fullPath":"Apparel > Boys"
+				},
+				{
+					"shortDescription":"Girls",
+					"name":"Girls",
+					"value":"3074457345616676672",
+					"image":"images\/catalog\/apparel\/girls\/category\/catr_app_girls.png",
+					"fullPath":"Apparel > Girls"
+				}
+			],
+			"identifier":"Category"
+		},
+		{
+			"name":"ManufacturerName",
+			"entry":[
+				{
+					"count":"14",
+					"name":"Adelee Plus",
+					"value":"mfName_ntk_cs%3A%22Adelee+Plus%22"
+				},
+				{
+					"count":"471",
+					"name":"Albini",
+					"value":"mfName_ntk_cs%3A%22Albini%22"
+				},
+				{
+					"count":"2",
+					"name":"Alexander Home",
+					"value":"mfName_ntk_cs%3A%22Alexander+Home%22"
+				},
+				{
+					"count":"2",
+					"name":"All-In-One",
+					"value":"mfName_ntk_cs%3A%22All-In-One%22"
+				},
+				{
+					"count":"12",
+					"name":"Alumina",
+					"value":"mfName_ntk_cs%3A%22Alumina%22"
+				}
+			],
+			"value":"mfName_ntk_cs",
+			"identifier":"Brand"
+		},
+		{
+			"entry":[
+				{
+					"name":"About the Dress Designer",
+					"path":"en\/auroraesite\/apparel-designer"
+				},
+				{
+					"name":"Corporate Contact Us for AuroraESite",
+					"path":"en\/auroraesite\/corporate-contact-us"
+				},
+				{
+					"name":"Site Map for AuroraESite",
+					"path":"en\/auroraesite\/sitemap"
+				},
+				{
+					"name":"About Us for AuroraESite",
+					"path":"en\/auroraesite\/corporate-info"
+				},
+				{
+					"name":"Evening Sparkle Dress Collection Video",
+					"path":"en\/auroraesite\/evening-dress-video"
+				},
+				{
+					"name":"Website Privacy Policy for AuroraESite",
+					"path":"en\/auroraesite\/privacy-policy"
+				},
+				{
+					"name":"Return Policy for AuroraESite",
+					"path":"en\/auroraesite\/return-policy"
+				},
+				{
+					"name":"Help at AuroraESite",
+					"path":"en\/auroraesite\/help"
+				},
+				{
+					"name":"Contact Us for AuroraESite",
+					"path":"en\/auroraesite\/contact-us"
+				},
+				{
+					"name":"Clothing and Dress Style Guide",
+					"path":"en\/auroraesite\/apparel-style-guide"
+				}
+			],
+			"identifier":"Articles"
+		}
+	]
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WC">
+        <wb-resource deploy-path="/" source-path="/"/>
+        <dependent-module archiveName="CommerceAccelerator.war"
+            deploy-path="/" handle="module:/resource/CommerceAccelerator/CommerceAccelerator">
+            <dependent-object>WebModule_1171577759218</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="OrganizationAdministration.war"
+            deploy-path="/" handle="module:/resource/OrganizationAdministration/OrganizationAdministration">
+            <dependent-object>WebModule_1171577759125</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SiteAdministration.war"
+            deploy-path="/" handle="module:/resource/SiteAdministration/SiteAdministration">
+            <dependent-object>WebModule_1171577758046</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Stores.war" deploy-path="/" handle="module:/resource/Stores/Stores">
+            <dependent-object>WebModule_1171577759062</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="WebServicesRouter.war"
+            deploy-path="/" handle="module:/resource/WebServicesRouter/WebServicesRouter">
+            <dependent-object>WebModule_1171577758546</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="WebSphereCommerceServerExtensionsData.jar"
+            deploy-path="/" handle="module:/resource/WebSphereCommerceServerExtensionsData/WebSphereCommerceServerExtensionsData">
+            <dependent-object>EjbModule_1171577758453</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="WebSphereCommerceServerExtensionsLogic.jar"
+            deploy-path="/" handle="module:/resource/WebSphereCommerceServerExtensionsLogic/WebSphereCommerceServerExtensionsLogic">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="LOBTools.war" deploy-path="/" handle="module:/resource/LOBTools/LOBTools">
+            <dependent-object>WebModule_1210216323687</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GiftCenter-Server.jar"
+            deploy-path="/" handle="module:/resource/GiftCenter-Server/GiftCenter-Server">
+            <dependent-object>EjbModule_1329189120862</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ILogJRules-Server.jar"
+            deploy-path="/" handle="module:/resource/ILogJRules-Server/ILogJRules-Server">
+            <dependent-object>EjbModule_1429189120862</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Installment-Server.jar"
+            deploy-path="/" handle="module:/resource/Installment-Server/Installment-Server">
+            <dependent-object>EjbModule_1529189120862</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Location-Server.jar"
+            deploy-path="/" handle="module:/resource/Location-Server/Location-Server">
+            <dependent-object>EjbModule_1629189120862</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="PageLayout-Server.jar"
+            deploy-path="/" handle="module:/resource/PageLayout-Server/PageLayout-Server">
+            <dependent-object>EjbModule_1729189120862</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Search-Server.jar"
+            deploy-path="/" handle="module:/resource/Search-Server/Search-Server">
+            <dependent-object>EjbModule_1829189120862</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Subscription-Server.jar"
+            deploy-path="/" handle="module:/resource/Subscription-Server/Subscription-Server">
+            <dependent-object>EjbModule_1929189120862</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Wallet-Server.jar"
+            deploy-path="/" handle="module:/resource/Wallet-Server/Wallet-Server">
+            <dependent-object>EjbModule_1129189120862</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="GiftCenterServicesHTTPInterface.war"
+            deploy-path="/" handle="module:/resource/GiftCenterServicesHTTPInterface/GiftCenterServicesHTTPInterface">
+            <dependent-object>WebModule_1191362546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="InstallmentServicesHTTPInterface.war"
+            deploy-path="/" handle="module:/resource/InstallmentServicesHTTPInterface/InstallmentServicesHTTPInterface">
+            <dependent-object>WebModule_1191372546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="LocationServicesRESTInterface.war"
+            deploy-path="/" handle="module:/resource/LocationServicesHTTPInterface/LocationServicesHTTPInterface">
+            <dependent-object>WebModule_1191382546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="PageLayoutServicesHTTPInterface.war"
+            deploy-path="/" handle="module:/resource/PageLayoutServicesHTTPInterface/PageLayoutServicesHTTPInterface">
+            <dependent-object>WebModule_1191312546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SearchServicesHTTPInterface.war"
+            deploy-path="/" handle="module:/resource/SearchServicesHTTPInterface/SearchServicesHTTPInterface">
+            <dependent-object>WebModule_1191132546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="SubscriptionServicesHTTPInterface.war"
+            deploy-path="/" handle="module:/resource/SubscriptionServicesHTTPInterface/SubscriptionServicesHTTPInterface">
+            <dependent-object>WebModule_1107362546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="WalletServicesHTTPInterface.war"
+            deploy-path="/" handle="module:/resource/WalletServicesHTTPInterface/WalletServicesHTTPInterface">
+            <dependent-object>WebModule_1291362546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Rest.war" deploy-path="/" handle="module:/resource/Rest/Rest">
+            <dependent-object>WebModule_2191362546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="RestPreview.war" deploy-path="/" handle="module:/resource/RestPreview/RestPreview">
+            <dependent-object>WebModule_3191362546906</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="Enablement-JCAConfiguratorConnector.rar"
+            deploy-path="/" handle="module:/resource/Enablement-JCAConfiguratorConnector/Enablement-JCAConfiguratorConnector">
+            <dependent-object>ConnectorModule_1371577757890</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module
+            archiveName="Enablement-JCASterlingOMSConnector.rar"
+            deploy-path="/" handle="module:/resource/Enablement-JCASterlingOMSConnector/Enablement-JCASterlingOMSConnector">
+            <dependent-object>ConnectorModule_4371577757890</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
