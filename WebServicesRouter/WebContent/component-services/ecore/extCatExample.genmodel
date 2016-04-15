@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Java-Annotation-Ext-Test/src"
+    editDirectory="/Java-Annotation-Ext-Test.edit/src" editorDirectory="/Java-Annotation-Ext-Test.editor/src"
+    modelPluginID="Java-Annotation-Ext-Test" runtimeJar="true" modelName="extCatExample"
+    editPluginClass="com.mycompany.catalog.datatypes.provider.extCatExampleEditPlugin"
+    editorPluginClass="com.mycompany.catalog.datatypes.presentation.extCatExampleEditorPlugin"
+    rootExtendsInterface="" rootExtendsClass="org.eclipse.emf.ecore.sdo.impl.EDataObjectImpl"
+    rootImplementsInterface="org.eclipse.emf.ecore.sdo.InternalEDataObject" suppressEMFTypes="true"
+    featureMapWrapperInterface="commonj.sdo.Sequence" featureMapWrapperInternalInterface="org.eclipse.emf.ecore.sdo.util.ESequence"
+    featureMapWrapperClass="org.eclipse.emf.ecore.sdo.util.BasicESequence" runtimeCompatibility="false"
+    usedGenPackages="../../Java-Annotation-Test/ecore/catExample.genmodel#//datatypes">
+  <foreignModel>@model</foreignModel>
+  <staticPackages>http://www.eclipse.org/emf/2003/SDO</staticPackages>
+  <modelPluginVariables>EMF_COMMONJ_SDO=org.eclipse.emf.commonj.sdo</modelPluginVariables>
+  <modelPluginVariables>EMF_ECORE_SDO=org.eclipse.emf.ecore.sdo</modelPluginVariables>
+  <genPackages prefix="MyCompanyCatalog" basePackage="com.mycompany.catalog" ecorePackage="datatypes.ecore#/">
+    <genClasses ecoreClass="datatypes.ecore#//CustomCatalogRoot">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CustomCatalogRoot/CustomTestCatEntry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CustomCatalogRoot/TestCatEntryCatEntryRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CustomCatalogRoot/TestCatEntryDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CustomCatalogRoot/TestCatEntryProperty"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CustomTestCatEntry">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CustomTestCatEntry/testCatEntryCatEntryRelationship"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CustomTestCatEntry/testCatEntryCatEntryRelationship2"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CustomTestCatEntry/testCatEntryDescription"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CustomTestCatEntry/testCatEntryProperty"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//TestCatEntryCatEntryRelationship">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryCatEntryRelationship/catEntryCatEntryRelationshipId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryCatEntryRelationship/childCatEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryCatEntryRelationship/parentCatEntryId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//TestCatEntryCatEntryRelationship/customTestCatEntryChild"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//TestCatEntryCatEntryRelationship/customTestCatEntryParent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryCatEntryRelationship/usageCode"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//TestCatEntryDescription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryDescription/catEntryDescriptionId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryDescription/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryDescription/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryDescription/shortDescription"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//TestCatEntryDescription/customTestCatEntry"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//TestCatEntryProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryProperty/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryProperty/catEntryPropertyId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntryProperty/name"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//TestCatEntryProperty/customTestCatEntry"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

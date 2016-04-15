@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+<Definitions>
+	<FlowElementObjectDefinition definitionName="cmc/price/ExternalPriceRuleElementObject" displayName="${priceResources.externalPriceRule}" elemTemplateType="Action" objectType="externalRule" package="cmc/price">
+		<dependency localName="priceResources" moduleName="cmc/price/PriceResources"/>
+		<CreateService baseDefinition="cmc/price/FlowElementCreateService">
+			<ServiceParam name="PROPERTY_externalRuleIdentifier" objectPath="RefExternalPriceRule" propertyName="externalRuleIdentifier"/>
+		</CreateService>
+		<UpdateService baseDefinition="cmc/price/FlowElementUpdateService">
+			<ServiceParam name="PROPERTY_externalRuleIdentifier" objectPath="RefExternalPriceRule" propertyName="externalRuleIdentifier"/>
+		</UpdateService>
+		<Xml name="template">
+			<elemTemplateName>externalRule</elemTemplateName>
+		</Xml>
+		<!-- Define reference relationship between the current Element and an External Price Rule -->
+		<ReferenceObjectDefinition allowDuplicates="false" derivedId="true" idProperty="externalRuleIdentifier" objectType="RefExternalPriceRule" referencedType="ExternalPriceRule"/>
+		<RequiredChildObjectValidator errorMessage="${priceResources.errorMessage_missingExternalRule}" objectPath="RefExternalPriceRule" validatorId="reqExternalRuleValidator"/>
+	</FlowElementObjectDefinition>
+</Definitions>

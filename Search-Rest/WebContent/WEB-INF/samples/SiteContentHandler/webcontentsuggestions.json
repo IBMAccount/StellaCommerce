@@ -1,0 +1,49 @@
+{
+  "suggestionView": [
+    {
+      "entry": [
+        {
+          "name": "About the Dress Designer",
+          "path": "en\/auroraesite\/apparel-designer"
+        },
+        {
+          "name": "Corporate Contact Us for AuroraESite",
+          "path": "en\/auroraesite\/corporate-contact-us"
+        },
+        {
+          "name": "Site Map for AuroraESite",
+          "path": "en\/auroraesite\/sitemap"
+        },
+        {
+          "name": "About Us for AuroraESite",
+          "path": "en\/auroraesite\/corporate-info"
+        },
+        {
+          "name": "Evening Sparkle Dress Collection Video",
+          "path": "en\/auroraesite\/evening-dress-video"
+        },
+        {
+          "name": "Website Privacy Policy for AuroraESite",
+          "path": "en\/auroraesite\/privacy-policy"
+        },
+        {
+          "name": "Return Policy for AuroraESite",
+          "path": "en\/auroraesite\/return-policy"
+        },
+        {
+          "name": "Help at AuroraESite",
+          "path": "en\/auroraesite\/help"
+        },
+        {
+          "name": "Contact Us for AuroraESite",
+          "path": "en\/auroraesite\/contact-us"
+        },
+        {
+          "name": "Clothing and Dress Style Guide",
+          "path": "en\/auroraesite\/apparel-style-guide"
+        }
+      ],
+      "identifier": "Articles"
+    }
+  ]
+}

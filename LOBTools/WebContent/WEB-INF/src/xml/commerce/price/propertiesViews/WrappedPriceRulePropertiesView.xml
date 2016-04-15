@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+<Definitions>
+	<ObjectProperties definitionName="cmc/price/WrappedPriceRuleProperties">
+		<dependency localName="priceResources" moduleName="cmc/price/PriceResources"/>
+		<PropertyTabs name="tabs">
+			<PropertyTabPane name="generalProperties" text="${priceResources.generalProperties}">
+				<PropertyGroup collapsable="false" name="group">
+					<PropertyInputText promptText="${priceResources.nameString}" propertyName="name"/>
+					<PropertyInputMultiLineText promptText="${priceResources.description}" propertyName="description"/>
+					<PropertyChildListEditor helpLinkURL="tasks/tpictpriceruleext.htm" helpText="${priceResources.helpText_externalPriceRule}" listDefinition="cmc/price/ExternalRuleGrid" name="externalPriceRuleEditor" objectPath="externalRule" objectTypes="RefExternalPriceRule" promptText="${priceResources.externalPriceRuleLabel}" singleChild="true"/>
+				</PropertyGroup>
+			</PropertyTabPane>
+		</PropertyTabs>
+	</ObjectProperties>
+
+	<ObjectGrid definitionName="cmc/price/ExternalRuleGrid" preferenceKey="prcExternalRuleGrid">
+		<dependency localName="priceResources" moduleName="cmc/price/PriceResources"/>
+		<GridText editable="false" name="externalRuleIdentifier" objectPath="ExternalPriceRule" propertyName="externalRuleIdentifier" text="${priceResources.nameString}" visible="true" width="275"/>
+	</ObjectGrid>
+</Definitions>

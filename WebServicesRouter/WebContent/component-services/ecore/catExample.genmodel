@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Java-Annotation-Test/src"
+    editDirectory="/Java-Annotation-Test.edit/src" editorDirectory="/Java-Annotation-Test.editor/src"
+    modelPluginID="Java-Annotation-Test" runtimeJar="true" modelName="catExample"
+    editPluginClass="com.ibm.commerce.catalog.example.facade.server.entity.datatypes.provider.catExampleEditPlugin"
+    editorPluginClass="com.ibm.commerce.catalog.example.facade.server.entity.datatypes.presentation.catExampleEditorPlugin"
+    rootExtendsInterface="" rootExtendsClass="org.eclipse.emf.ecore.sdo.impl.EDataObjectImpl"
+    rootImplementsInterface="org.eclipse.emf.ecore.sdo.InternalEDataObject" suppressEMFTypes="true"
+    featureMapWrapperInterface="commonj.sdo.Sequence" featureMapWrapperInternalInterface="org.eclipse.emf.ecore.sdo.util.ESequence"
+    featureMapWrapperClass="org.eclipse.emf.ecore.sdo.util.BasicESequence" importerID="org.eclipse.emf.importer.java">
+  <foreignModel>@model</foreignModel>
+  <staticPackages>http://www.eclipse.org/emf/2003/SDO</staticPackages>
+  <modelPluginVariables>EMF_COMMONJ_SDO=org.eclipse.emf.commonj.sdo</modelPluginVariables>
+  <modelPluginVariables>EMF_ECORE_SDO=org.eclipse.emf.ecore.sdo</modelPluginVariables>
+  <genPackages prefix="CatalogExample" basePackage="com.ibm.commerce.catalog.example.facade.server.entity"
+      ecorePackage="datatypes.ecore#/">
+    <genClasses ecoreClass="datatypes.ecore#//Apparel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Apparel/catEntryId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//Apparel/catEntry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Apparel/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Apparel/length"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Apparel/markForDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Apparel/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Apparel/size"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//AttachmentAsset">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAsset/assetLink"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//AttachmentAsset/attachmentAssetGroupRelationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAsset/attachmentAssetId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAsset/iconLink"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAsset/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAsset/optCounter"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//AttachmentAssetGroup">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroup/attachmentAssetGroupId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//AttachmentAssetGroup/attachmentAssetGroupRelationship"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//AttachmentAssetGroup/catEntryAttachmentRelationship"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//AttachmentAssetGroup/catGroupAttachmentRelationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroup/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroup/lastUpdate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroup/markForDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroup/optCounter"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//AttachmentAssetGroupRelationship">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//AttachmentAssetGroupRelationship/attachmentAsset"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//AttachmentAssetGroupRelationship/attachmentAssetGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroupRelationship/attachmentAssetGroupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroupRelationship/attachmentAssetGroupRelationshipId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroupRelationship/attachmentAssetId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroupRelationship/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroupRelationship/languageId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroupRelationship/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroupRelationship/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttachmentAssetGroupRelationship/usageCode"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Attribute/attributeId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Attribute/attrTypeId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Attribute/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Attribute/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Attribute/name"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//Attribute/testAttrValue2"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//Attribute/testCatEntryAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//AttributeValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttributeValue/attributeId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttributeValue/attrTypeId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttributeValue/attrValueId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttributeValue/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttributeValue/floatValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttributeValue/integerValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttributeValue/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//AttributeValue/stringValue"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//AttributeValue/testCatEntryAttributeValue"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//AttributeValue/testCatEntryAttributeValue2"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//Beverage">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//Beverage/catEntry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Beverage/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Beverage/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Beverage/markForDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Beverage/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Beverage/pricePerMilliliter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Beverage/volumePerMilliliter"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//Book">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Book/bookId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Book/languageId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Book/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Book/iSBN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Book/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Book/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Book/shortDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Book/thumbnail"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntry/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntry/partNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntry/subtableCode"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntry/apparel"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntry/catEntryCatEntryRelationship"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntry/catEntryCatGroupRelationship"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntry/catEntryDescription"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntry/catEntryProperty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntry/catEntryTypeCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntry/displayable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntry/lastUpdate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntry/markForDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntry/optCounter"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntry/prodSubTypeTable"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatEntryAttachmentRelationship">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntryAttachmentRelationship/attachmentAssetGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryAttachmentRelationship/attachmentAssetGroupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryAttachmentRelationship/catEntryAttachmentRelationshipId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryAttachmentRelationship/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryAttachmentRelationship/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryAttachmentRelationship/usageCode"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatEntryCatEntryRelationship">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntryCatEntryRelationship/catEntry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatEntryRelationship/catEntryCatEntryRelationshipId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatEntryRelationship/childCatEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatEntryRelationship/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatEntryRelationship/parentCatEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatEntryRelationship/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatEntryRelationship/usageCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatEntryRelationship/displaySequence"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatEntryCatGroupRelationship">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntryCatGroupRelationship/catEntry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatGroupRelationship/catEntryCatGroupRelationshipId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatGroupRelationship/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatGroupRelationship/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatGroupRelationship/catGroupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatGroupRelationship/usageCode"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntryCatGroupRelationship/catGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryCatGroupRelationship/displaySequence"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatEntryDescription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/catEntryDescriptionId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntryDescription/catEntry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/image"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/languageId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/longDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/shortDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryDescription/thumbnail"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatEntryProperty">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatEntryProperty/catEntry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/catEntryPropertyId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/image"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/languageId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/usageCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatEntryProperty/displaySequence"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatGroup">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroup/catEntryCatGroupRelationship"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroup/catGroupAttachmentRelationship"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroup/catGroupCatGroupRelationshipsToChildCatGroups"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroup/catGroupCatGroupRelationshipsToParentCatGroups"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroup/catGroupDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroup/catGroupId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroup/catGroupProperty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroup/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroup/lastUpdate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroup/markForDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroup/optCounter"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatGroupAttachmentRelationship">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroupAttachmentRelationship/attachmentAssetGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupAttachmentRelationship/attachmentAssetGroupId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroupAttachmentRelationship/catGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupAttachmentRelationship/catGroupAttachmentRelationshipId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupAttachmentRelationship/catGroupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupAttachmentRelationship/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupAttachmentRelationship/usageCode"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatGroupCatGroupRelationship">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroupCatGroupRelationship/catalog"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupCatGroupRelationship/catalogId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupCatGroupRelationship/catGroupCatGroupRelationshipId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroupCatGroupRelationship/childCatGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupCatGroupRelationship/childCatGroupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupCatGroupRelationship/optCounter"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroupCatGroupRelationship/parentCatGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupCatGroupRelationship/parentCatGroupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupCatGroupRelationship/usageCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupCatGroupRelationship/displaySequence"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatGroupDescription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/catGroupDescriptionId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroupDescription/catGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/catGroupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/image"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroupDescription/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/languageId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/longDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/shortDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupDescription/thumbnail"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatGroupProperty">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//CatGroupProperty/catGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/catGroupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/catGroupPropertyId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/image"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/languageId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/usageCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//CatGroupProperty/displaySequence"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//Catalog">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Catalog/catalogId"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//Catalog/catGroupCatGroupRelationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Catalog/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Catalog/optCounter"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//CatalogExampleRoot">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catEntry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/apparel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/beverage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catEntryDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catEntryProperty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catEntryCatEntryRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catEntryCatGroupRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catGroup"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catGroupAttachmentRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/attachmentAssetGroup"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/attachmentAssetGroupRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/attachmentAsset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/attributeValue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catalog"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/testCatEntry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catEntryAttachmentRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catGroupCatGroupRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catGroupDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/catGroupProperty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/language"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/book"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference datatypes.ecore#//CatalogExampleRoot/marketingContent"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//Language">
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//Language/catGroupDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Language/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Language/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Language/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Language/languageId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Language/localeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Language/mimecharset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Language/optCounter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//Language/variant"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//MarketingContent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//MarketingContent/contentId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//MarketingContent/storeEntityId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//MarketingContent/format"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//MarketingContent/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//MarketingContent/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//MarketingContent/field1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//MarketingContent/field2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//MarketingContent/optCounter"/>
+    </genClasses>
+    <genClasses ecoreClass="datatypes.ecore#//TestCatEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntry/catEntryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntry/parentId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute datatypes.ecore#//TestCatEntry/partNumber"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//TestCatEntry/testAttribute"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//TestCatEntry/testAttrValue"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//TestCatEntry/testCatEntry"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference datatypes.ecore#//TestCatEntry/testCatEntryParent"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+
+<Definitions>
+
+		<!---
+			<p>
+			Class definition for the advanced search class for Catalog Entries.
+			This class extends from the cmc/foundation/AdvancedSearchContent class and is in charge of building the 
+			user interface for gathering the input from the user to perform the advanced search.
+			</p>
+			
+			<p>
+			As required by extending the cmc/foundation/AdvancedSearchContent, a setSearchOptions method is
+			implemented to set the searchOptions attribute of the super class. The searchOptions is an
+			object that contains the name/value pairs that will be sent to the search service.
+			</p>
+			
+			<p>
+			This search is used to find the following:
+			{@link cmc/catalog/ProductPrimaryObjectDefinition Products},
+			{@link cmc/catalog/BundlePrimaryObjectDefinition Bundles},
+			{@link cmc/catalog/KitPrimaryObjectDefinition Kits},
+			{@link cmc/catalog/ProductSKUPrimaryObjectDefinition ProductSKUs},
+			{@link cmc/catalog/CatalogGroupSKUPrimaryObjectDefinition CatalogGroupSKUs}
+			</p>
+			
+			<p>			
+			Search parameters incuded in this class : 
+				<ol>
+					<li> catalogEntryCode - Represents the partnumber of the catalog entry.
+					<li> catalogEntryName - Represents the name of the catalogentry
+					<li> mfPartNumber - Represents the manufacturer partnumber of the catalog entry.
+					<li> manufacturer - Represents the manufacturer of the catalog entry.
+					<li> published - Represents whether the catalog entry has been published or not or either.
+					<li> parentCategory - Represents the parent category of the catalog entry.
+					<li> catalogSelectionCatalogEntry - Represents the catalog to be searched in.
+					<li> catentryTypes - Represents the catalog entry types to be searched for.
+					<li> typeProducts, typeSKUs, typeKits and typeBundles, typePDKs - Represents the specific type of the catalog entry.
+				</ol>
+			</p>									  
+			
+			<p>
+			If this class is extended to append some extra search parameters, you must also write the
+			setSearchOptions method that calls the super.setSearchOptions() and then appends the new
+			extra search parameters to the searchOptions attribute.
+			</p>
+		-->
+		<AdvancedSearchContent classDefinition="true" definitionName="cmc/catalog/AllCatalogEntriesAdvancedSearchContent">
+		<dependency localName="catalogResources" moduleName="cmc/catalog/CatalogResources"/>
+	
+			<variable name="myStyle" value="${this.parent.parent.parent.parent.parent.style}"/>
+			
+			<AxisLayout axis="y" spacing="6"/>
+			<Component name="section1" width="${this.immediateParent.width}">
+					<AxisLayout axis="y"/>
+					<Component height="15" name="filler1"/>
+					<!-- Instructional text to the user -->
+					<TextComponent multiline="true" text="${catalogResources.Singleton.searchInstructionalText.string}" width="${this.immediateParent.width}"/>
+					<Component height="2" name="filler2"/>
+			</Component>
+			<Component name="section2" width="410">
+				<AxisLayout axis="x"/>
+				<Component name="section2_1" width="230">
+						<AxisLayout axis="y" spacing="2"/>
+						<Component name="section2_1_1" width="${this.immediateParent.width}">
+								<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.catalogEntryCodeSearchPrompt.string}" width="${this.immediateParent.width}"/>
+						</Component>
+						<Component name="section2_1_2" width="${this.immediateParent.width}">
+							<!-- Text field for the catalogEntryCode search parameter -->
+							<InputText name="catalogEntryCode" width="177"/>
+						</Component>
+				</Component>
+				<Component name="section2_2" width="181">
+					<AxisLayout axis="y" spacing="2"/>
+					<Component name="section2_2_1" width="${this.immediateParent.width}">
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.catalogEntryNameSearchPrompt.string}" width="${this.immediateParent.width}"/>
+					</Component>
+					<Component name="section2_2_2" width="${this.immediateParent.width}">
+						<!-- Text field for the catalogEntryName search parameter -->
+						<InputText name="catalogEntryName" width="177"/>
+					</Component>
+				</Component>
+			</Component>
+			
+			<Component name="section3" width="410">
+				<AxisLayout axis="x"/>
+				<Component name="section3_1" width="230">
+					<AxisLayout axis="y" spacing="2"/>
+					<Component name="section3_1_1" width="${this.immediateParent.width}">
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.mfPartnumberSearchPrompt.string}" width="${this.immediateParent.width}"/>
+					</Component>
+					<Component name="section3_1_2" width="${this.immediateParent.width * 0.97}">
+						<!-- Text field for the mfPartNumber (Manufacturer partnumber) search parameter -->
+						<InputText name="mfPartNumber" width="177"/>
+					</Component>
+				</Component>
+			
+				<Component name="section3_2" width="181">
+					<AxisLayout axis="y" spacing="2"/>
+					<Component name="section3_2_1" width="${this.immediateParent.width}">
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.manufacturerSearchPrompt.string}" width="${this.immediateParent.width}"/>
+					</Component>
+					<Component name="section3_2_2" width="${this.immediateParent.width}">
+						<!-- Text field for the manufacturer search parameter -->
+						<InputText name="manufacturer" width="177"/>
+					</Component>
+				</Component>
+			</Component>
+		
+			<Component name="section4" width="410">
+				<AxisLayout axis="y" spacing="6"/> 
+				
+				<Component name="section4_2" width="${this.immediateParent.width}">
+					<AxisLayout axis="y" spacing="2"/>
+					
+					<Component name="section4_2_1" width="${this.immediateParent.width}">
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.categorySearchPrompt.string}" width="${this.immediateParent.width}"/>
+					</Component>
+					
+					<Component name="section4_2_2" width="${this.immediateParent.width}">
+						<AxisLayout axis="y" spacing="6"/>
+						<!-- Text field for the parentCategory search param -->	
+						<InputText name="parentCategory" width="177"/>
+						<Component imageSet="dividerLine" stretches="width" width="${this.parent.width - 3}"/>
+					</Component>
+				</Component>
+				
+				<Component name="section4_1" width="${this.immediateParent.width}">
+					<AxisLayout axis="y" spacing="2"/> 
+					<Component name="section4_1_1" width="${this.immediateParent.width}">
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.publishSearchPrompt.string}" width="${this.immediateParent.width}"/>
+					</Component>
+					<Component name="section4_1_2" width="${this.immediateParent.width}">
+						<!-- 
+							Radio button group for the published search param.
+							Options : 1) Published - Will search for all published catalog entries
+									  2) Not Published - Will search for all un-published catalog entries
+									  3) Published or Not Published - Will search for all published or un-published catalog entries
+						 -->
+						<BaseRadioGroup name="published">
+						   	<BaseRadioButton text="${catalogResources.Singleton.publishedSearchOptionPrompt_1.string}" value="1"/>
+						   	<BaseRadioButton text="${catalogResources.Singleton.publishedSearchOptionPrompt_2.string}" value="2"/>
+					    	<BaseRadioButton selected="true" text="${catalogResources.Singleton.publishedSearchOptionPrompt_3.string}" value="3"/>
+						</BaseRadioGroup>
+					</Component>
+				</Component>
+				
+				
+			</Component>
+		 	
+		 	<Component name="section5" width="410">
+				<AxisLayout axis="x"/>
+				<Component name="section5_1" width="${this.immediateParent.width}">
+					<AxisLayout axis="y" spacing="2"/>
+					<Component imageSet="dividerLine" stretches="width" width="${this.parent.width - 3}"/>
+					<Component height="2" name="filler1"/>
+					<Component name="section5_1_1" width="${this.immediateParent.width}">
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.catalogSearchPrompt.string}" width="${this.immediateParent.width}"/>
+					</Component>
+					<Component name="section5_1_2" width="${this.immediateParent.width}">
+						  <!-- 
+							  An instance of the Catalog Selection widget used 
+							  for choosing a catalog from the master and sales catalogs in the store.
+							  This is for the catalogSelectionCatalogEntry search parameter.
+						   -->
+						  <CatalogSelectionWidget advancedSearchContent="${this.classroot}" name="catalogSelectionCatalogEntry" package="cmc/catalog" width="177"/>
+					</Component> 
+					<Component height="2" name="filler2"/>
+					<Component imageSet="dividerLine" stretches="width" width="${this.parent.width - 3}"/>
+				</Component>
+				
+			</Component>
+			
+			
+			
+			<Component name="section6" width="410">
+				<AxisLayout axis="y" spacing="2"/>
+				
+				<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.catalogEntryTypeSearchPrompt.string}" width="${this.immediateParent.width}"/>
+				<!-- 
+					Radio Button Group for catentryTypes search param. 
+					Options: 1) To search under all catalog entries except SKUs 
+							 2) To specify one or more particular type - This would list the different types to select from. 
+				-->
+				<BaseRadioGroup name="catentryTypes" x="5">
+					    <BaseRadioButton selected="true" text="${catalogResources.Singleton.catalogEntryTypeSearchOptionPrompt_1.string}" value="1"/>
+					    <BaseRadioButton text="${catalogResources.Singleton.catalogEntryTypeSearchOptionPrompt_2.string}" value="2"/>
+				</BaseRadioGroup>
+				<State active="${this.immediateParent.catentryTypes.value == 2}" name="state0"/>
+					<Component height="2" name="filler9" visible="${this.parent.state0.active}"/>
+					<Component name="section6_1" visible="${this.parent.state0.active}" width="${this.immediateParent.width}" x="24">
+						<AxisLayout axis="y" spacing="2"/>
+						<Component name="section6_1_1" width="${this.immediateParent.width}">
+							
+							<!-- Checkbox for the typeProducts search parameter -->
+							<BaseCheckbox name="typeProducts" text="${catalogResources.Singleton.productTypeSearchOptionPrompt.string}" width="160"/>
+							<!-- Checkbox for the typeSKUs search parameter -->
+							<BaseCheckbox name="typeSKUs" text="${catalogResources.Singleton.skuTypeSearchOptionPrompt.string}" width="160" x="172"/>
+						</Component>
+						<Component name="section6_1_2" width="${this.immediateParent.width}">
+							
+							<!-- Checkbox for the typeBundles search parameter -->
+							<BaseCheckbox name="typeBundles" text="${catalogResources.Singleton.bundleTypeSearchOptionPrompt.string}" width="160"/>
+							
+							<!-- Checkbox for the typeKits search parameter -->
+							<BaseCheckbox name="typeKits" text="${catalogResources.Singleton.kitTypeSearchOptionPrompt.string}" width="160" x="172"/>
+							
+							
+						</Component>
+						<Component name="section6_1_3" width="${this.immediateParent.width}">
+							
+							
+							<!-- Checkbox for the typePDKs search parameter -->
+							<BaseCheckbox name="typePDKs" text="${catalogResources.Singleton.pdkTypeSearchOptionPrompt.string}" width="160"/>
+							
+							
+						</Component>
+					</Component>
+				
+			
+			</Component>
+		
+			<!---
+				Construct the search options for the all catalog entries advanced search.
+			-->
+			<method name="setSearchOptions">
+			<![CDATA[
+			this.inherited(arguments);
+			var newSearchOptions = {};
+			newSearchOptions.catalogEntryCode = this.section2.section2_1.section2_1_2.catalogEntryCode.getText();
+			newSearchOptions.catalogEntryName = this.section2.section2_2.section2_2_2.catalogEntryName.getText();
+			newSearchOptions.mfPartNumber = this.section3.section3_1.section3_1_2.mfPartNumber.getText();
+			newSearchOptions.manufacturer = this.section3.section3_2.section3_2_2.manufacturer.getText();
+			newSearchOptions.published = this.section4.section4_1.section4_1_2.published.getSelection().getValue();
+			newSearchOptions.parentCategory = this.section4.section4_2.section4_2_2.parentCategory.getText();
+			newSearchOptions.catalogSelectionCatalogEntry = this.section5.section5_1.section5_1_2.catalogSelectionCatalogEntry.getValue();
+			newSearchOptions.catentryTypes = this.section6.catentryTypes.getValue();
+			if (newSearchOptions.catentryTypes == 2) {
+				newSearchOptions.typeProducts = this.section6.section6_1.section6_1_1.typeProducts.getValue();
+				newSearchOptions.typeSKUs = this.section6.section6_1.section6_1_1.typeSKUs.getValue();
+				newSearchOptions.typeKits = this.section6.section6_1.section6_1_2.typeKits.getValue();
+				newSearchOptions.typeBundles = this.section6.section6_1.section6_1_2.typeBundles.getValue();
+				newSearchOptions.typePDKs = this.section6.section6_1.section6_1_3.typePDKs.getValue();
+			}
+			this.searchOptions = newSearchOptions;
+			]]>
+		</method>
+		</AdvancedSearchContent>
+	
+
+		<!---
+			<p>
+			Class definition for the advanced search class for CatalogGroups.
+			This class extends from the cmc/foundation/AdvancedSearchContent class and is in charge of building the 
+			user interface for gathering the input from the user to perform the advanced search.
+			<p>
+			
+			<p>
+			As required by extending the cmc/foundation/AdvancedSearchContent, a setSearchOptions method is
+			implemented to set the searchOptions attribute of the super class. The searchOptions is an
+			object that contains the name/value pairs that will be sent to the search service.
+			<p>
+			
+			<p>
+			This search is used to find the following:
+			{@link cmc/catalog/CatalogGroupPrimaryObjectDefinition CatalogGroups},
+			{@link cmc/catalog/SalesCatalogGroupPrimaryObjectDefinition SalesCatalogGroups}
+			</p>
+			
+			<p>
+			Search parameters incuded in this class : 
+				<ol>
+					<li> catalogGroupCode - Represents the identifier of the catalog group.
+					<li> catalogGroupName - Represents the name of the catalog group.
+					<li> catalogGroupDescription - Represents the short description of the catalog group
+					<li> catalogSelectionCatalogGroup - Represents the catalog to be searched in.
+				</ol>
+			</p>
+			
+			<p>
+			If this class is extended to append some extra search parameters, you must also write the
+			setSearchOptions method that calls the super.setSearchOptions() and then appends the new
+			extra search parameters to the searchOptions attribute.
+			</p>
+		-->
+		<AdvancedSearchContent classDefinition="true" definitionName="cmc/catalog/CategoriesAdvancedSearchContent">
+		<dependency localName="catalogResources" moduleName="cmc/catalog/CatalogResources"/>
+			
+			<variable name="myStyle" value="${this.parent.parent.parent.parent.parent.style}"/>
+		
+			<Component name="main" width="410">
+				<AxisLayout axis="y" spacing="6"/>
+				<Component name="section1" width="${this.immediateParent.width}">
+					<AxisLayout axis="y"/>
+					<Component height="15" name="filler1"/>
+					<TextComponent multiline="true" text="${catalogResources.Singleton.searchInstructionalText.string}" width="${this.immediateParent.width}"/>
+					<Component height="2" name="filler2"/>
+				</Component>
+				<Component name="section2" width="${this.immediateParent.width}">
+					<AxisLayout axis="x"/>
+					<Component name="section2_1" width="230">
+						<AxisLayout axis="y" spacing="2"/>
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.catalogGroupCodeSearchPrompt.string}" width="${this.immediateParent.width}"/>
+						<!-- Text field for catalogGroupCode search parameter -->
+						<InputText name="catalogGroupCode" width="177"/>
+					</Component>
+					<Component name="section2_2" width="181" x="${-2}">
+						<AxisLayout axis="y" spacing="2"/>
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.catalogGroupNameSearchPrompt.string}" width="${this.immediateParent.width}"/>
+						<!-- Text field for catalogGroupName search parameter -->
+						<InputText name="catalogGroupName" width="177"/>
+					</Component>
+				</Component>
+				<Component name="section3" width="${this.immediateParent.width}">
+					<Component name="section3_1" width="${this.immediateParent.width * 0.50}">
+						<AxisLayout axis="y" spacing="2"/>
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.catalogGroupDescriptionSearchPrompt.string}" width="${this.immediateParent.width}"/>
+						<!-- Text field for catalogGroupDescription search parameter -->
+						<InputText name="catalogGroupDescription" width="177"/>
+					</Component>
+				</Component>
+				<Component name="section4" width="${this.immediateParent.width}">
+					<AxisLayout axis="y" spacing="2"/>
+					<Component imageSet="dividerLine" stretches="width" width="${this.parent.width - 3}"/>
+					<Component height="2" name="filler6"/>
+					<Component name="section4_1" width="50">
+						<TextComponent fgcolor="${this.classroot.myStyle.texthilitecolor}" text="${catalogResources.Singleton.catalogSearchPrompt.string}" width="${this.immediateParent.width}"/>
+					</Component>
+					<Component name="section4_2" width="175">
+						<AxisLayout axis="y"/>
+						<!-- 
+							  An instance of the Catalog Selection widget used 
+							  for choosing a catalog from the master and sales catalogs in the store.
+							  This is for the catalogSelectionCatalogGroup search parameter.
+						  -->
+						 <CatalogSelectionWidget advancedSearchContent="${this.classroot}" name="catalogSelectionCatalogGroup" package="cmc/catalog" width="177"/>
+					</Component>
+				</Component>
+				
+			</Component>
+			
+			<!---
+				Construct the search options for the all catalog groups advanced search.
+			-->
+			<method name="setSearchOptions">
+			<![CDATA[
+			this.inherited(arguments);
+			var newSearchOptions = {};
+			newSearchOptions.catalogGroupCode = this.main.section2.section2_1.catalogGroupCode.getText();
+			newSearchOptions.catalogGroupName = this.main.section2.section2_2.catalogGroupName.getText();
+			newSearchOptions.catalogGroupDescription = this.main.section3.section3_1.catalogGroupDescription.getText();
+			newSearchOptions.catalogSelectionCatalogGroup = this.main.section4.section4_2.catalogSelectionCatalogGroup.getValue();
+			newSearchOptions.catalogSelectionCatalogGroupIdentifier = this.main.section4.section4_2.catalogSelectionCatalogGroup.getIdentifier();
+			newSearchOptions.catalogSelectionCatalogGroupStoreId = this.main.section4.section4_2.catalogSelectionCatalogGroup.getObjectStoreId();
+			this.searchOptions = newSearchOptions;
+			]]>
+		</method>
+		</AdvancedSearchContent>
+</Definitions>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of IBM
+
+  WebSphere Commerce
+
+  (C) Copyright IBM Corp. 2015 All Rights Reserved.
+
+  US Government Users Restricted Rights - Use, duplication or
+  disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp.
+ =================================================================
+-->
+<Definitions>
+
+	<!--- @keywords private -->
+	<Component classDefinition="true" definitionName="cmc/price/PricingGettingStartedPage" height="${this.immediateParent.height}" visible="false" width="${this.immediateParent.width}">
+		<dependency localName="priceResources" moduleName="cmc/price/PriceResources"/>
+		<Component fontsize="13" width="${this.parent.width - 30}" y="35" fgcolor="#464646">
+			<TextComponent fontsize="24" x="25" multiline="true" text="${priceResources.Singleton.gettingStartedPageTitle.string}" width="${this.parent.width - 25}"/>
+			<Component height="32"/>
+			<TextComponent multiline="true" x="40" text="${priceResources.Singleton.gettingStartedPageContent_01.string}" width="${this.parent.width - 40}"/>
+			<TextComponent multiline="true" x="90" text="${priceResources.Singleton.gettingStartedPageContent_02.string}" width="${this.parent.width - 90}"/>
+			<Component height="32"/>
+			<HelpLinkText helpLink="concepts/cpipricingtools.htm" x="25" fgcolor="#037bbf" width="${this.parent.width - 25}"/>
+			<AxisLayout axis="y" spacing="0"/>
+		</Component>
+	</Component>
+	
+</Definitions>

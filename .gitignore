@@ -1,0 +1,9 @@
+.metadata
+*.war
+*.ear
+*.class
+WCBD/deploy/toolkit/WCALoggerConfig.xml
+WCBD/deploy/toolkit/derby.log
+WCBD/deploy/logs/
+*.log
+Stores/WebContent/WEB-INF/classes/*.class
